@@ -1,0 +1,177 @@
+@charset "UTF-8";
+
+/**
+ * @author Amélie Larouche
+ *
+ * TABLE DES MATIERES
+ * Normalize
+ * Utilitaires
+ * Charte typographique
+ * Mise en page
+ */
+
+/* Normalize
+   ========================================================================== */
+@import url(_normalize.css);
+
+/* Utilitaires
+   ========================================================================== */
+@import url(_utilitaires.css);
+
+/* Charte typographique
+   ========================================================================== */
+/* Playfair*/
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+/*Raleway*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;1,600&display=swap');
+
+h1,
+h2 {
+    font-family: "Playfair", serif;
+    font-size: 2rem;
+}
+h2 {
+    font-size: 4.8rem;
+}
+h3 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+.accroche {
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+}
+h4 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 1.2rem;
+}
+p {
+    font-family: Roboto, sans-serif;
+    line-height: 150%;
+}
+
+/* Mise en page
+   ========================================================================== */
+header {
+    color: white;
+    background-color: black;
+    height: 70px;
+}
+body {
+    background-color: #F6E2CE;
+}
+.haut {
+    padding: 15px;
+}
+.haut__c {
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+.bas {
+    padding: 15px;
+}
+.a {
+    background-color: #6C4E3E;
+    color: white;
+    text-align: center;
+    height: 70px;
+    padding: 10px;
+}
+.e,
+.f {
+    background-color: #6C4E3E;
+    color: white;
+    padding: 5px;
+}
+
+@media (min-width: 600px) {
+    .haut {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+    }
+
+    .haut__a {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        padding: 10px;
+        text-align: right;
+    }
+
+    .haut__b {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    .haut__c {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        padding-top: 40px;
+        margin: 5px;
+    }
+
+    .haut__d {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        padding-top: 40px;
+    }
+}
+
+
+@media (min-width: 600px) {
+    .bas {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+        grid-template-areas: "a a a" "b c d" "e f f";
+        margin: 30px;
+    }
+    .a {
+        grid-area: a;
+        padding-top: 20px;
+    }
+
+    .b {
+        grid-area: b;
+    }
+
+    .c {
+        grid-area: c;
+    }
+
+    .d {
+        grid-area: d;
+    }
+
+    .e {
+        grid-area: e;
+    }
+
+    .f {
+        grid-area: f;
+    }
+}
+
+/* FOOTER */
+
+.droits {
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 60px;
+}
+
+
