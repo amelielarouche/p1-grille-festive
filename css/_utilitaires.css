@@ -1,16 +1,6 @@
 /* Variables et utilitaires
    ========================================================================== */
 
-/****** Variables (peuvent être utilisées dans tous les fichiers) *******/
-/*:root {*/
-/*    --couleur-texte: */
-/*    --couleur-titres-h1-h3: */
-/*    --couleur-dominante: d*/
-/*    --couleur-secondaire: */
-/*    --bg-couleur-contraste:*/
-/*    --box-shadow:*/
-/*}*/
-
 /*** Clearfix ***/
 .clearfix::after {
     content: "";
